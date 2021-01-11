@@ -69,12 +69,11 @@ function capitalize(str) {
 
 // console.log(capitalize("hello world"));
 
-// Replace character
+// Replace characters
 // ===============================
 // prettier-ignore
-function capitalize(str) {
-  return str.split(" ").reduce((memo, current) => {
-    const [firstLetter, ...rest] = current;
-    return memo.concat(firstLetter.toUpperCase() + rest.join(""));
-  }, []).join(' ');
+function replace(input, a, b) {
+  return input.replace(new RegExp(a, 'g'), b);
 }
+
+console.log(replace("helllo world", "l", "X"));
