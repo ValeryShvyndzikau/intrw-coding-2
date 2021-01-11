@@ -15,8 +15,7 @@ function isPalidrome(str) {
 // ================================
 // prettier-ignore
 function anagram(str1, str2) {
-  console.log(str1.toLowerCase().split('').sort().join(''))
   return str1.toLowerCase().split('').sort().join('') === str2.toLowerCase().split('').sort().join('');
 }
 
-//console.log(anagram("dell", "ledleeg"));
+console.log(anagram("dell", "ledl"));
