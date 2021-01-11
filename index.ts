@@ -37,7 +37,7 @@ function fibonacci(num) {
 }
 
 // 0,1,1,2,3,5,8,13,21,34
-console.log(fibonacci(7));
+//console.log(fibonacci(7)); // 13 num is index in fibonacci sequence
 
 // function fibonacci2(num) {
 //   if (num <= 1) return 1;
