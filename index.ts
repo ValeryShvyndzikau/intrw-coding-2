@@ -44,3 +44,15 @@ function fibonacci(num) {
 
 //   return fibonacci(num - 1) + fibonacci(num - 2);
 // }
+
+// Find vowels (гласные)
+// ================================
+
+function findVowels(str) {
+  const vowels = ["a", "o", "u", "i"];
+  return str.split("").reduce((memo, current) => {
+    return vowels.includes(current) ? memo.concat(current) : memo;
+  }, []);
+}
+
+console.log(findVowels("dfdsfjgodgpodiuaaag"));
