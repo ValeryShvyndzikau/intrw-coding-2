@@ -80,3 +80,37 @@ console.log(replace("helllo world", "l", "X"));
 
 // Find pair with given sum in an array
 // ===============================
+const list = [8, 7, 2, 5, 3, 1];
+
+function findPair(num, list) {
+  //for (let i = 0; i < list.length; i++) {
+  //let current = list[i];
+  //let rest = list.slice(i+1);
+
+  //console.log(current, 'current')
+  //console.log(rest, 'rest')
+  // console.log(i, 'i')
+
+  let counter = 0;
+  let result = [];
+
+  while (list.length) {
+    const current = list[0];
+    const rest = list.slice(1);
+
+    for (let i = 0; i < rest.length; i++) {
+      if (current + rest[i] === num) {
+        result.push(counter);
+      }
+    }
+
+    counter++;
+    list.splice(0, 1);
+  }
+}
+
+function sum(a, array) {
+  return;
+}
+
+console.log(findPair(4, [4, 5, 6]));
