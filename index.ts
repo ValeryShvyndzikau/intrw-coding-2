@@ -55,4 +55,26 @@ function findVowels(str) {
   }, []);
 }
 
-console.log(findVowels("dfdsfjgodgpodiuaaag"));
+// console.log(findVowels("dfdsfjgodgpodiuaaag"));
+
+// Title case a string
+// ===============================
+// prettier-ignore
+function capitalize(str) {
+  return str.split(" ").reduce((memo, current) => {
+    const [firstLetter, ...rest] = current;
+    return memo.concat(firstLetter.toUpperCase() + rest.join(""));
+  }, []).join(' ');
+}
+
+// console.log(capitalize("hello world"));
+
+// Replace character
+// ===============================
+// prettier-ignore
+function capitalize(str) {
+  return str.split(" ").reduce((memo, current) => {
+    const [firstLetter, ...rest] = current;
+    return memo.concat(firstLetter.toUpperCase() + rest.join(""));
+  }, []).join(' ');
+}
