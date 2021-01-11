@@ -77,3 +77,6 @@ function replace(input, a, b) {
 }
 
 console.log(replace("helllo world", "l", "X"));
+
+// Find pair with given sum in an array
+// ===============================
